@@ -68,7 +68,7 @@ class Bullet {
     this.health = [];
     this.img = new Image();
     this.img.src =
-      "https://i349.photobucket.com/albums/q384/jaulicino/asdfaa_zpsoxim7qe5.png";
+      "./images/adff.png";
   }
   add(numShips, mW, mH) {
     for (var i = 0; i < numShips; i++) {
@@ -327,10 +327,10 @@ class Store {
   constructor() {
     this.img = new Image();
     this.img.src =
-      "https://i349.photobucket.com/albums/q384/jaulicino/storewtext_zpsllqzggsq.png";
+      "./images/store.png";
   }
   draw(ship, ctx, input, gW, gH) {
-    ctx.drawImage(this.img, 0, 0, 873, 665, 0, 0, gW, gH);
+    ctx.drawImage(this.img, 0, 0, 1024, 770, 0, 0, gW, gH);
     ctx.globalAlpha = 0.1;
     ctx.fillStyle = "blue";
     if (
@@ -461,7 +461,7 @@ class Store {
     this.baseAccel = 30;
     var img = new Image(); // Create new img element
     img.src =
-      "https://i349.photobucket.com/albums/q384/jaulicino/eship1_zpsjpkzjbg7.png";
+      "./images/asdf.png";
     this.image = img;
     this.position = {
       cx: gameWidth / 2,
@@ -484,7 +484,7 @@ class Store {
       342 * Math.floor(this.cimg / 10),
       0,
       342,
-      490,
+      450,
       -this.width / 2,
       -this.height / 2,
       this.width,
@@ -632,7 +632,7 @@ class Background {
   constructor() {
     this.img = new Image();
     this.img.src =
-      "https://i349.photobucket.com/albums/q384/jaulicino/bground_zpsh4qgatyj.png";
+      "./images/bground.png";
   }
   draw(ship, ctx, iW, iH, mW, mH) {
     for (var i = 0; i < mW / iW; i++) {
@@ -642,7 +642,7 @@ class Background {
           0,
           0,
           1023,
-          587,
+          598,
           i * iW - ship.position.x,
           j * iH - ship.position.y,
           iW,
